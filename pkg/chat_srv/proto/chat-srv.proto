@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package chat;
 
-option go_package = "./pkg/chat/proto";
+option go_package = "./pkg/chat_srv/proto";
 
 service Services {
   rpc ChatService(stream FromClient) returns (stream FromServer){};
